@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <NoWarn>$(NoWarn);CA1812</NoWarn>
-    <UserSecretsId>27a98761-36dd-4c0c-a5b9-88f39d9365e6</UserSecretsId>
+    <UserSecretsId>00000000-0000-0000-0000-000000000000</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup>

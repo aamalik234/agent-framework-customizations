@@ -4,7 +4,7 @@ Two .NET console applications that enable roundtripping between Microsoft Agent 
 
 ## Scenario
 
-**EY Customer Support Demo**: Generate a human-readable Word document from an existing workflow YAML (stripping all agent names and technical syntax), then re-generate identical YAML from that Word document by providing agent names as context.
+**Customer Support Demo**: Generate a human-readable Word document from an existing workflow YAML (stripping all agent names and technical syntax), then re-generate identical YAML from that Word document by providing agent names as context.
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ Two .NET console applications that enable roundtripping between Microsoft Agent 
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `AZURE_AI_PROJECT_ENDPOINT` | Azure AI Foundry project endpoint | `https://foundryamalik.services.ai.azure.com/api/projects/proj-default` |
+| `AZURE_AI_PROJECT_ENDPOINT` | Azure AI Foundry project endpoint | `https://<your-resource>.services.ai.azure.com/api/projects/<your-project>` |
 | `AZURE_AI_MODEL_DEPLOYMENT_NAME` | Model deployment name (default: `gpt-5.1`) | `gpt-5.1` |
 
 ## Build
@@ -44,7 +44,7 @@ dotnet run --project YamlToWord -- --input path/to/workflow.yaml --output MyKnow
 |----------|---------|-------------|
 | `--input` | `../../workflow-samples/CustomerSupport.yaml` | Path to the workflow YAML file |
 | `--output` | `CustomerSupport_KnowledgeBase.docx` | Output Word document path |
-| `--title` | `EY Customer Support Process — Knowledge Base` | Document title |
+| `--title` | `Customer Support Process — Knowledge Base` | Document title |
 
 ## Program 2: WordToYaml — Generate YAML from Knowledge Base
 
@@ -86,7 +86,7 @@ dotnet run --project WordToYaml -- \
 cd tools/yaml-docx-roundtrip
 
 # Set environment
-$env:AZURE_AI_PROJECT_ENDPOINT = "https://foundryamalik.services.ai.azure.com/api/projects/proj-default"
+$env:AZURE_AI_PROJECT_ENDPOINT = "https://<your-resource>.services.ai.azure.com/api/projects/<your-project>"
 $env:AZURE_AI_MODEL_DEPLOYMENT_NAME = "gpt-5.1"
 
 # Step 1: YAML → Word

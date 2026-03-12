@@ -1,4 +1,4 @@
-// Copyright (c) Microsoft. All rights reserved.
+// Licensed under the MIT License. See LICENSE file in the project root for full license information.
 
 // This program deploys the CustomerSupport workflow and its agents to Azure AI Foundry.
 // Agent tools are provided via a HostedMcpServerTool reference that points to the

@@ -1,4 +1,4 @@
-// Copyright (c) Microsoft. All rights reserved.
+// Licensed under the MIT License. See LICENSE file in the project root for full license information.
 
 // This MCP server exposes the CustomerSupport ticketing tools (CreateTicket, GetTicket,
 // ResolveTicket, SendNotification) over HTTP Streamable transport. When deployed to a
